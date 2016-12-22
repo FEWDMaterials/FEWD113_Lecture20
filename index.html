@@ -431,6 +431,7 @@ html, body {
                     document.getElementById('desc').innerHTML = info;
                     return;
                 }
+                processed = processed.toLowerCase();
                 console.log(data, data[processed])
                 var htmlcontent = marked( data[processed].content );
                 const section = document.createElement('section');
