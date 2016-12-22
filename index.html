@@ -431,7 +431,7 @@ html, body {
                     document.getElementById('desc').innerHTML = info;
                     return;
                 }
-                var htmlcontent = marked( item.content );
+                var htmlcontent = marked( data[item].content );
                 const section = document.createElement('section');
                 section.innerHTML = htmlcontent;
                 content.appendChild(section);
